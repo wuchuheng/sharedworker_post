@@ -7,7 +7,6 @@
 #### 使用方式
 在`html`页面加载`index.js`文件后;
 
-> * 
 ``` javascript
 <script>
    // 声明接收消息地址（任意字符串）
