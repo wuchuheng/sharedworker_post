@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+ 
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>CCC</title>
+</head>
+ 
+<body>
+  <h> 我是:CCC</h>
+ <div class="news"></div>
+ <p> 内容 <input type="text" class="content"> </p>
+ <p> 给谁 <input type="text" class="to"> </p>
+ <button class="submit">发送</button>
+ <p> <a href="./index.html" target="_black">我是AAA</a> </p>
+ <p> <a href="./BBB.html" target="_blank">我是BBB</a> </p>
+ <p> <a href="./CCC.html" target="_black">我是CCC</a> </p>
+</body>
+<script src="./index.js"></script>
+<script>
+  // 声明地址
+  var post = new Post({from:"CCC"});
+  //收件回调
+  post.inbox(
+    {
+      onMessage: function(e) {
+        console.log(e);
+      }
+    });
+   //发件
+   document.querySelector('.submit').addEventListener('click', function (e) {
+     post.sent({
+       status: 2,
+       data: {
+         value: document.querySelector('.content').value,
+         to: document.querySelector('.to').value,
+       }
+     });
+   })
+</script>
+ 
+</html>

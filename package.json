@@ -1,0 +1,19 @@
+{
+  "name": "sharedworker_post",
+  "version": "1.0.0",
+  "description": "共享子线程消息分发邮局。共享子线程能在多个同源页面之间传递数据。而本模块共享子线程的基础上引入了邮局的概念，使发一个消息就像发邮件，精确把消息发送给对应的另一方。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuchuheng/sharedworker_post.git"
+  },
+  "author": "wuchuheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wuchuheng/sharedworker_post/issues"
+  },
+  "homepage": "https://github.com/wuchuheng/sharedworker_post#readme"
+}
