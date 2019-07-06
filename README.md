@@ -3,7 +3,7 @@
 ------
 `H5` 的`SharedWorker`子线程能实现多个页面的消息接收和发送。
 本模块引入邮件的收发概念，使能多个页面之间的消息能明确收发。
-
+### [Demo](http://sharedworker_post.wuchuheng.com/)
 #### 使用方式
 在`html`页面加载`index.js`文件后;
 
